@@ -14,8 +14,9 @@ df.columns = ['temp']
 fig,axs = plt.subplots(3)
 axs[0].plot(df.index, df.temp, color = 'b')
 
-rolling_mean = df.temp.rolling(window=20).mean()
-rolling_mean2 = df.temp.rolling(window=50).mean()
-axs[1].plot(df.index, rolling_mean, color ='r')
-axs[2].plot(df.index, rolling_mean2, color ='y')
+rolling_mean_bad = df.temp.rolling(window=80).mean()
+rolling_mean_nice = df.temp.rolling(window=31).mean()
+axs[1].plot(df.index, rolling_mean_bad, color ='r')
+axs[2].plot(df.index, rolling_mean_nice, color ='y')
+fig.set_size_inches(18.5, 20.5)
 fig.show()

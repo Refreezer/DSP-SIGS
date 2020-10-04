@@ -53,8 +53,8 @@ alc = old_alc
 acid = old_acid
 average_alc = sum(alc[0] + alc[1] + alc[2]) / len(alc[0] + alc[1] + alc[2])
 average_acid = sum(acid[0] + acid[1] + acid[2]) / len(acid[0] + acid[1] + acid[2])
-s_alc = sum(list(map(lambda el: el - average_alc, alc[0] + alc[1] + alc[2]))) / (len(alc[0]) + len(alc[1]) + len(alc[2]))
-s_acid = sum(list(map(lambda el: el - average_acid, acid[0] + acid[1] + acid[2]))) / (len(acid[0]) + len(acid[1]) + len(acid[2]))
+s_alc = sum(list(map(lambda el: (el - average_alc)**2, alc[0] + alc[1] + alc[2]))) / (len(alc[0]) + len(alc[1]) + len(alc[2]))
+s_acid = sum(list(map(lambda el: (el - average_acid)**2, acid[0] + acid[1] + acid[2]))) / (len(acid[0]) + len(acid[1]) + len(acid[2]))
 print(sum(list(map(lambda el: el - average_alc, alc[0] + alc[1] + alc[2]))))
 print(average_alc, len(alc[0]) + len(alc[1]) + len(alc[2]),s_alc)
 
