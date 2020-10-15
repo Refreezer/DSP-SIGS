@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-from scipy.spatial.distance import squareform, pdist
 import matplotlib.pyplot as plt
 from sklearn.manifold import MDS
+from scipy.spatial.distance import squareform, pdist
 
 iris_df = pd.read_csv("iris.data", sep=",", encoding="utf-8", header=None)
 
