@@ -1,4 +1,4 @@
 {
     "python.pythonPath": "c:\\Users\\shnei\\PycharmProjects\\level_lines\\venv\\Scripts\\python.exe",
-    "python.dataScience.jupyterServerURI": "local"
+    "jupyter.jupyterServerType": "local"
 }

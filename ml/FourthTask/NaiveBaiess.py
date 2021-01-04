@@ -1,4 +1,3 @@
-from __future__ import division
 from collections import defaultdict
 from math import log
 import pandas as pd
